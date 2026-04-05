@@ -1,0 +1,24 @@
+---Resumo da Configuração
+
+
+
+Multi-VM (Cluster): O arquivo define 4 máquinas virtuais independentes que sobem ao mesmo tempo.
+
+Camada Web (web01, web02, web03): * Usa o Ubuntu Focal (20.04).
+
+Cada uma tem um IP fixo na rede privada (.41, .42 e .43).
+
+Nota: Tem um pequeno erro de digitação no hostname da web03, que está como "web02". No Git, é legal corrigir para "web03".
+
+Camada de Dados (db01): * Usa o CentOS Stream 9 (mostrando que você sabe trabalhar com distros diferentes).
+
+Tem o IP fixo .44.
+
+Provisionamento Automatizado (IaC): * A máquina de banco de dados já sobe com o MariaDB instalado, iniciado e configurado para ligar junto com o sistema (enable).
+
+Isso economiza seu tempo, pois você não precisa instalar nada manualmente após ligar a VM.
+
+--- Como acessar
+Depois que você rodar o comando vagrant up e todas as máquinas estiverem prontas, basta escolher qual delas você quer acessar e digitar:
+
+vagrant ssh nome-da-maquina (ex: vagrant ssh db01 ou vagrant ssh web01)
