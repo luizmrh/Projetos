@@ -8,10 +8,6 @@ Camada Web (web01, web02, web03): * Usa o Ubuntu Focal (20.04).
 
 Cada uma tem um IP fixo na rede privada (.41, .42 e .43).
 
-Nota: Tem um pequeno erro de digitação no hostname da web03, que está como "web02". No Git, é legal corrigir para "web03".
-
-Camada de Dados (db01): * Usa o CentOS Stream 9 (mostrando que você sabe trabalhar com distros diferentes).
-
 Tem o IP fixo .44.
 
 Provisionamento Automatizado (IaC): * A máquina de banco de dados já sobe com o MariaDB instalado, iniciado e configurado para ligar junto com o sistema (enable).
