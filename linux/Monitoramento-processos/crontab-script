@@ -1,0 +1,11 @@
+# Minuto- Hora- dia- Mes- Dia da semana
+
+#  30      20    *    *    1-5
+
+# 1-5 segunda a sexta
+
+* * * * * /home/luizfelipe/vm/Projetos/linux/Monitoramento-processos/monit.sh >> /home/luizfelipe/vm/Projetos/linux/Monitoramento-processos/monit_apache.log 2>&1
+
+# O sript ira rodar meu script sempre que ele for desligado e ira  criar e  armazenar os logs na pasta monit_apache.log
+
+
